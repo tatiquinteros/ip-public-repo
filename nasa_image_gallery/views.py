@@ -2,7 +2,7 @@
 # si se necesita algún dato (lista, valor, etc), esta capa SIEMPRE se comunica con services_nasa_image_gallery.py
 
 from django.shortcuts import redirect, render
-from .layers.services import services_nasa_image_gallery
+from .layers.services.services_nasa_image_gallery import getAllImages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 
